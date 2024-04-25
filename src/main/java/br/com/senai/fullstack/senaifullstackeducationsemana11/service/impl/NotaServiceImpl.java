@@ -1,8 +1,9 @@
-package br.com.senai.fullstack.senaifullstackeducationsemana11.service;
+package br.com.senai.fullstack.senaifullstackeducationsemana11.service.impl;
 
 import br.com.senai.fullstack.senaifullstackeducationsemana11.entity.NotaEntity;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.exception.NotFoundException;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.repository.NotaRepository;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.service.NotaService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

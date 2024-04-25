@@ -1,8 +1,9 @@
-package br.com.senai.fullstack.senaifullstackeducationsemana11.service;
+package br.com.senai.fullstack.senaifullstackeducationsemana11.service.impl;
 
 import br.com.senai.fullstack.senaifullstackeducationsemana11.entity.CadernoEntity;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.exception.NotFoundException;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.repository.CadernoRepository;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.service.CadernoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
