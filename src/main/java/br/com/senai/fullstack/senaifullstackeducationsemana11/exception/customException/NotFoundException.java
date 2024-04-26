@@ -1,4 +1,4 @@
-package br.com.senai.fullstack.senaifullstackeducationsemana11.exception;
+package br.com.senai.fullstack.senaifullstackeducationsemana11.exception.customException;
 
 public class NotFoundException extends RuntimeException {
 

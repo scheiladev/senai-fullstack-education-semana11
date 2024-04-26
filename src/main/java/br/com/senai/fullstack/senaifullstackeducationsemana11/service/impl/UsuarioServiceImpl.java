@@ -1,13 +1,12 @@
 package br.com.senai.fullstack.senaifullstackeducationsemana11.service.impl;
 
-import br.com.senai.fullstack.senaifullstackeducationsemana11.dto.request.UsuarioRequest;
-import br.com.senai.fullstack.senaifullstackeducationsemana11.dto.response.UsuarioResponse;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.request.UsuarioRequest;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.response.UsuarioResponse;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.entity.UsuarioEntity;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.exception.customException.ConflitoDeDadosException;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.exception.customException.RequisicaoInvalidaException;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.repository.PerfilRepository;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.repository.UsuarioRepository;
-import br.com.senai.fullstack.senaifullstackeducationsemana11.service.TokenService;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.service.UsuarioService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -20,7 +19,6 @@ public class UsuarioServiceImpl implements UsuarioService {
   private final BCryptPasswordEncoder bCryptEncoder;
   private final UsuarioRepository usuarioRepository;
   private final PerfilRepository perfilRepository;
-  private final TokenService tokenService;
 
   public UsuarioResponse cadastroUsuario(UsuarioRequest usuarioRequest) {
 

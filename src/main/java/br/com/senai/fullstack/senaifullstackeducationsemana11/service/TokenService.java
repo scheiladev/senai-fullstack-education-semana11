@@ -1,7 +1,7 @@
 package br.com.senai.fullstack.senaifullstackeducationsemana11.service;
 
-import br.com.senai.fullstack.senaifullstackeducationsemana11.dto.request.LoginRequest;
-import br.com.senai.fullstack.senaifullstackeducationsemana11.dto.response.LoginResponse;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.request.LoginRequest;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.response.LoginResponse;
 
 public interface TokenService {
 

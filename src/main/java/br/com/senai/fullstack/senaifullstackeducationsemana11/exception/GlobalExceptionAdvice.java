@@ -1,8 +1,9 @@
 package br.com.senai.fullstack.senaifullstackeducationsemana11.exception;
 
-import br.com.senai.fullstack.senaifullstackeducationsemana11.dto.ErroDto;
-import br.com.senai.fullstack.senaifullstackeducationsemana11.dto.ExceptionDto;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.ErroDto;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.ExceptionDto;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.exception.customException.ConflitoDeDadosException;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.exception.customException.NotFoundException;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.exception.customException.RequisicaoInvalidaException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataIntegrityViolationException;

@@ -1,18 +1,20 @@
 package br.com.senai.fullstack.senaifullstackeducationsemana11.service;
 
-import br.com.senai.fullstack.senaifullstackeducationsemana11.entity.CadernoEntity;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.request.AlterarCadernoRequest;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.request.IncluirCadernoRequest;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.response.CadernoResponse;
 
 import java.util.List;
 
 public interface CadernoService {
 
-  CadernoEntity criar(CadernoEntity entity);
+  List<CadernoResponse> buscarTodos(String token);
 
-  List<CadernoEntity> buscarTodos();
+  CadernoResponse buscarPorId(Long id, String token);
 
-  CadernoEntity buscarPorId(Long id);
+  CadernoResponse criar(IncluirCadernoRequest request, String token);
 
-  CadernoEntity alterar(Long id, CadernoEntity entity);
+  CadernoResponse alterar(Long id, AlterarCadernoRequest request, String token);
 
-  void apagar(Long id);
+  void apagar(Long id, String token);
 }

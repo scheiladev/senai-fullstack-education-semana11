@@ -1,18 +1,20 @@
 package br.com.senai.fullstack.senaifullstackeducationsemana11.service;
 
-import br.com.senai.fullstack.senaifullstackeducationsemana11.entity.NotaEntity;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.request.AlterarNotaRequest;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.request.IncluirNotaRequest;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.response.NotaResponse;
 
 import java.util.List;
 
 public interface NotaService {
 
-  NotaEntity criar(NotaEntity entity);
+  List<NotaResponse> buscarTodos(String token);
 
-  List<NotaEntity> buscarTodos();
+  NotaResponse buscarPorId(Long id, String token);
 
-  NotaEntity buscarPorId(Long id);
+  NotaResponse criar(IncluirNotaRequest request, String token);
 
-  NotaEntity alterar(Long id, NotaEntity entity);
+  NotaResponse alterar(Long id, AlterarNotaRequest request, String token);
 
-  void apagar(Long id);
+  void apagar(Long id, String token);
 }

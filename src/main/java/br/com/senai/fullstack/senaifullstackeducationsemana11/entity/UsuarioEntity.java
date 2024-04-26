@@ -1,6 +1,6 @@
 package br.com.senai.fullstack.senaifullstackeducationsemana11.entity;
 
-import br.com.senai.fullstack.senaifullstackeducationsemana11.dto.request.LoginRequest;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.request.LoginRequest;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

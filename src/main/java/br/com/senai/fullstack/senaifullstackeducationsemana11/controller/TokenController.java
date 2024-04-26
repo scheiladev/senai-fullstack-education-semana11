@@ -1,7 +1,7 @@
 package br.com.senai.fullstack.senaifullstackeducationsemana11.controller;
 
-import br.com.senai.fullstack.senaifullstackeducationsemana11.dto.request.LoginRequest;
-import br.com.senai.fullstack.senaifullstackeducationsemana11.dto.response.LoginResponse;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.request.LoginRequest;
+import br.com.senai.fullstack.senaifullstackeducationsemana11.controller.dto.response.LoginResponse;
 import br.com.senai.fullstack.senaifullstackeducationsemana11.service.TokenService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
